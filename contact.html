@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="max-w-screen-xl flex flex-col mx-auto p-4">
+    <nav class="relative bg-gradient-to-t from-orange-300 to-orange-600 rounded-xl border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div
+                class="flex justify-center items-center rounded-[33px] w-44 h-10 bg-[#e0e0e0] [box-shadow:inset_15px_15px_33px_#bebebe,_inset_-15px_-15px_33px_#ffffff]">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./img/image.png" class="h-8" alt="Chef-Now-Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap">Chef-Now</span>
+                </a>
+            </div>
+            <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <div class="flex flex-col items-end justify-between ">
+                    <button type="button"
+                        class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                        id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+                        data-dropdown-placement="bottom">
+                        <span class="sr-only">Open user menu</span>
+                        <img class="w-8 h-8 rounded-full" src="./img/1082-1728486744.jfif" alt="user photo">
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div class="absolute top-11 z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+                        id="user-dropdown">
+                        <div class="px-4 py-3">
+                            <span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
+                            <span class="block text-sm  text-white truncate dark:text-gray-400">name@flowbite.com</span>
+                        </div>
+                        <ul class="py-2 " aria-labelledby="user-menu-button">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                    out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button data-collapse-toggle="navbar-user" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-user" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+                <ul
+                    class="flex flex-col justify-center font-medium p-4 rounded-lg w-full md:w-[29.2rem] bg-[#e0e0e0] [box-shadow:inset_15px_15px_33px_#bebebe,_inset_-15px_-15px_33px_#ffffff] md:p-0 mt-4 border border-gray-100 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                     <li>
+                        <a href="./index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0 dark:text-white">Home</a>
+                    </li>
+                    <li>
+                        <a href="./notreMenu.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0 dark:text-white">Notre Menus</a>
+                    </li>
+                    <li>
+                        <a href="./Reservation.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0 dark:text-white">Reservation</a>
+                    </li>
+                    <li>
+                        <a href="./Pricing.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-600 md:p-0 dark:text-white">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html"
+                            class="block py-2 px-3 text-white bg-orange-600 rounded md:bg-transparent md:text-orange-600 md:p-0">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="flex items-center justify-center m-4">
+            <div
+                class="border-4 items-center justify-center border-black rounded-xl flex flex-col md:flex-row bg-gray-100 shadow-md w-full p-3">
+
+                <!-- Left Side Information -->
+                <div class="p-8 pt-[.5rem] flex flex-col justify-around  md:gap-16 w-full md:w-1/3 h-[100%]">
+                    <div class="flex">
+                        <img class=" w-14 h-12" src="/images/LogoAuchan.png" alt="LogoAuchan">
+                        <span class="mt-4 text-custom-16  font-bold">A-UCHAN</span>
+                    </div>
+                    <div class="mb-3 md:mb-20">
+                        <ul class="text-gray-600">
+                            <li class="mb-4">
+                                <strong>Chat to us</strong><br>
+                                Our friendly team is here to help.<br>
+                                <span class="text-blue-500">hi@a-uchan.com</span>
+                            </li>
+                            <li class="mb-4">
+                                <strong>Visit us</strong><br>
+                                Come say hello at our office HQ<br>
+                                100 Smith Street<br>
+                                Collingwood VIC 3066 AU
+                            </li>
+                            <li>
+                                <strong>Call us</strong><br>
+                                Mon-Fri from 8am to 5pm<br>
+                                +1 (555) 000-0000
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center  justify-center sm:justify-start space-x-4 mt-4">
+                        <a href="#" class="text-gray-500 hover:text-gray-700"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M20.7247 0H2.48697C1.82738 0 1.19481 0.261807 0.728415 0.727825C0.262019 1.19384 0 1.8259 0 2.48495L0 20.7079C0 21.367 0.262019 21.999 0.728415 22.465C1.19481 22.9311 1.82738 23.1929 2.48697 23.1929H9.59813V15.3078H6.33399V11.5964H9.59813V8.76773C9.59813 5.55024 11.5152 3.77298 14.4513 3.77298C15.8575 3.77298 17.3279 4.02355 17.3279 4.02355V7.18151H15.7078C14.1115 7.18151 13.6135 8.17134 13.6135 9.18655V11.5964H17.1772L16.6072 15.3078H13.6135V23.1929H20.7247C21.3843 23.1929 22.0169 22.9311 22.4833 22.465C22.9497 21.999 23.2117 21.367 23.2117 20.7079V2.48495C23.2117 1.8259 22.9497 1.19384 22.4833 0.727825C22.0169 0.261807 21.3843 0 20.7247 0Z"
+                                    fill="black" />
+                            </svg></a>
+                        <a href="#" class="text-gray-500 hover:text-gray-700"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M21.3519 0H3.1141C1.74109 0 0.627136 1.11305 0.627136 2.48495V20.7079C0.627136 22.0798 1.74109 23.1929 3.1141 23.1929H21.3519C22.7249 23.1929 23.8388 22.0798 23.8388 20.7079V2.48495C23.8388 1.11305 22.7249 0 21.3519 0ZM18.8183 8.22104C18.8286 8.366 18.8286 8.51613 18.8286 8.66109C18.8286 13.1495 15.409 18.3213 9.16054 18.3213C7.23314 18.3213 5.44563 17.7622 3.94309 16.7993C4.21769 16.8304 4.48193 16.8407 4.76172 16.8407C6.35234 16.8407 7.81343 16.3023 8.9792 15.3912C7.48702 15.3601 6.23317 14.3816 5.80313 13.0356C6.32643 13.1133 6.79792 13.1133 7.33676 12.9735C5.78241 12.6577 4.61664 11.291 4.61664 9.63953V9.59812C5.06741 9.85179 5.59589 10.0071 6.15027 10.0278C5.68419 9.71803 5.3021 9.29779 5.03812 8.80457C4.77413 8.31135 4.63645 7.7605 4.63737 7.20118C4.63737 6.56959 4.80317 5.98976 5.09849 5.4876C6.77201 7.54804 9.28489 8.89405 12.1034 9.03901C11.6216 6.73525 13.3469 4.86636 15.4194 4.86636C16.3986 4.86636 17.2794 5.27534 17.9012 5.93799C18.668 5.79304 19.4037 5.50831 20.0566 5.12003C19.8027 5.90693 19.269 6.56959 18.5644 6.98892C19.2483 6.91644 19.9115 6.7249 20.5229 6.46087C20.0617 7.13905 19.4814 7.73958 18.8183 8.22104Z"
+                                    fill="black" />
+                            </svg></a>
+                        <a href="#" class="text-gray-500 hover:text-gray-700"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M21.809 0H1.90811C0.996219 0 0.25531 0.750662 0.25531 1.67216V21.5207C0.25531 22.4422 0.996219 23.1929 1.90811 23.1929H21.809C22.7209 23.1929 23.467 22.4422 23.467 21.5207V1.67216C23.467 0.750662 22.7209 0 21.809 0ZM7.27063 19.8796H3.83032V8.81122H7.27581V19.8796H7.27063ZM5.55048 7.29954C4.44688 7.29954 3.55572 6.40392 3.55572 5.3064C3.55572 4.20888 4.44688 3.31327 5.55048 3.31327C6.64889 3.31327 7.54523 4.20888 7.54523 5.3064C7.54523 6.4091 6.65407 7.29954 5.55048 7.29954ZM20.1666 19.8796H16.7263V14.4955C16.7263 13.2117 16.7004 11.5602 14.9388 11.5602C13.1461 11.5602 12.8715 12.958 12.8715 14.4024V19.8796H9.43118V8.81122H12.7316V10.3229H12.7782C13.2393 9.45316 14.3637 8.53684 16.0372 8.53684C19.5189 8.53684 20.1666 10.8302 20.1666 13.8122V19.8796Z"
+                                    fill="black" />
+                            </svg></a>
+                        <a href="#" class="text-gray-500 hover:text-gray-700"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="27" height="18" viewBox="0 0 27 18" fill="none">
+                                <path
+                                    d="M25.509 2.94554C25.2198 1.85722 24.3675 1.0001 23.2853 0.709222C21.3238 0.180664 13.4585 0.180664 13.4585 0.180664C13.4585 0.180664 5.59327 0.180664 3.63174 0.709222C2.54959 1.00015 1.6973 1.85722 1.40803 2.94554C0.882446 4.91817 0.882446 9.0339 0.882446 9.0339C0.882446 9.0339 0.882446 13.1496 1.40803 15.1223C1.6973 16.2106 2.54959 17.032 3.63174 17.3229C5.59327 17.8514 13.4585 17.8514 13.4585 17.8514C13.4585 17.8514 21.3238 17.8514 23.2853 17.3229C24.3675 17.032 25.2198 16.2106 25.509 15.1223C26.0346 13.1496 26.0346 9.0339 26.0346 9.0339C26.0346 9.0339 26.0346 4.91817 25.509 2.94554ZM10.8861 12.7707V5.29713L17.46 9.03399L10.8861 12.7707Z"
+                                    fill="black" />
+                            </svg></a>
+                        <a href="#" class="text-gray-500 hover:text-gray-700"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M5.30556 10.1572C5.76669 7.96219 7.24333 6.13472 9.22772 5.20286C9.41424 5.45654 10.6784 7.21153 11.8546 9.29268C8.53862 10.1728 5.62162 10.1624 5.30556 10.1572ZM16.9321 6.31591C15.1913 4.77317 12.8235 4.18818 10.58 4.73176C10.7769 4.99578 12.0618 6.7456 13.2224 8.87334C15.7405 7.92595 16.8026 6.49711 16.9321 6.31591ZM7.89097 17.1876C9.98935 18.8235 12.725 19.0875 15.0047 18.1194C14.9011 17.4982 14.4866 15.3342 13.4918 12.7561C10.637 13.7293 8.63188 15.6759 7.89097 17.1876ZM13.01 11.5861C12.8338 11.1823 12.6369 10.7836 12.4349 10.385C8.9013 11.4411 5.47136 11.3997 5.16049 11.3894C5.16049 11.4618 5.15531 11.5343 5.15531 11.6068C5.15531 13.4239 5.84441 15.0805 6.9739 16.3385C8.12413 14.3765 10.4505 12.3057 13.01 11.5861ZM14.8182 12.4299C15.7456 14.9718 16.1187 17.0426 16.1912 17.4723C17.7818 16.4007 18.9113 14.6974 19.2274 12.7302C18.9891 12.6525 17.0358 12.0727 14.8182 12.4299ZM13.7664 9.92427C14.0151 10.4316 14.1965 10.8458 14.3882 11.3117C16.7456 11.0166 19.0875 11.4877 19.3207 11.5395C19.3051 9.86732 18.7093 8.33494 17.7197 7.13388C17.5694 7.33578 16.3829 8.85263 13.7664 9.92427ZM23.8438 2.48495V20.7079C23.8438 22.0798 22.7299 23.1929 21.3569 23.1929H3.11911C1.74609 23.1929 0.632141 22.0798 0.632141 20.7079V2.48495C0.632141 1.11305 1.74609 0 3.11911 0H21.3569C22.7299 0 23.8438 1.11305 23.8438 2.48495ZM20.5279 11.5964C20.5279 7.03034 16.8078 3.31327 12.238 3.31327C7.66818 3.31327 3.9481 7.03034 3.9481 11.5964C3.9481 16.1625 7.66818 19.8796 12.238 19.8796C16.8078 19.8796 20.5279 16.1625 20.5279 11.5964Z"
+                                    fill="black" />
+                            </svg></a>
+                    </div>
+                </div>
+
+                <!-- Right Side Form -->
+                <div class="bg-gradient-to-b from-orange-300 to-orange-600 p-8 w-[95%] md:w-2/3 rounded-[32px] m-2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Got ideas? We've got the skills. Let's team up.
+                    </h2>
+                    <p class="text-gray-600 mb-6">Tell us more about yourself and what you have in mind.</p>
+
+                    <!-- Auto-fill Button -->
+                    <button type="button" id="auto"
+                        class="mb-4 px-4 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700">Auto
+                        Fill</button>
+
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <input id="name" placeholder="Your name"
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <input id="email" placeholder="you@company.com"
+                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <textarea id="message" rows="4" placeholder="Tell us a little about the project..."
+                                class="w-full resize-none p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                        </div>
+                        <div class="flex gap-4">
+                            <div>
+                                <div
+                                    class="flex items-center gap-2 p-1 transition-all duration-300 hover:bg-slate-200 rounded-lg">
+                                    <input type="checkbox" id="chec-1" name="service" value="Website design"
+                                        class="rounded">
+                                    <label for="chec-1">Website design</label>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 p-1 transition-all duration-300 hover:bg-slate-200 rounded-lg">
+                                    <input type="checkbox" id="chec-2" name="service" value="UX design"
+                                        class="text-green-500 rounded">
+                                    <label for="chec-2">UX design</label>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 p-1 transition-all duration-300 hover:bg-slate-200 rounded-lg">
+                                    <input type="checkbox" id="chec-3" name="service" value="User research"
+                                        class="text-green-500 rounded">
+                                    <label for="chec-3">User research</label>
+                                </div>
+                            </div>
+                            <div>
+                                <div
+                                    class="flex items-center gap-2 p-1 transition-all duration-300 hover:bg-slate-200 rounded-lg">
+                                    <input type="checkbox" id="chec-4" name="service" value="Content creation"
+                                        class="text-green-500 rounded">
+                                    <label for="chec-4">Content creation</label>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 p-1 transition-all duration-300 hover:bg-slate-200 rounded-lg">
+                                    <input type="checkbox" id="chec-5" name="service" value="Strategy & consulting"
+                                        class="text-green-500 rounded">
+                                    <label for="chec-5">Strategy & consulting</label>
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 p-1 transition-all duration-300 hover:bg-slate-200 rounded-lg">
+                                    <input type="checkbox" id="chec-6" name="service" value="Other"
+                                        class="text-green-500 rounded">
+                                    <label for="chec-6">Other</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="reset" id="submit" onclick="validation()"
+                            class="w-full py-3 bg-black text-white font-bold rounded-lg hover:bg-gray-800">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="bg-gradient-to-t from-orange-300 to-orange-400 rounded-xl">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div
+                    class="flex justify-center items-center rounded-[33px] w-44 h-10 bg-[#e0e0e0] [box-shadow:inset_15px_15px_33px_#bebebe,_inset_-15px_-15px_33px_#ffffff]">
+                    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="./img/image.png" class="h-8" alt="Chef-Now-Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap">Chef-Now</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                        <ul class="text-white dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                            </li>
+                            <li>
+                                <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <ul class="text-white dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                        <ul class="text-white dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2023 <a
+                        href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 8 19">
+                            <path fill-rule="evenodd"
+                                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 21 16">
+                            <path
+                                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                        </svg>
+                        <span class="sr-only">Discord community</span>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 17">
+                            <path fill-rule="evenodd"
+                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub account</span>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Dribbble account</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.querySelector("[data-collapse-toggle='navbar-user']");
+            const navbarMenu = document.getElementById("navbar-user");
+            toggleButton.addEventListener("click", () => {
+                navbarMenu.classList.toggle("hidden");
+            });
+            const userMenuButton = document.getElementById("user-menu-button");
+            const userDropdown = document.getElementById("user-dropdown");
+            userMenuButton.addEventListener("click", () => {
+                userDropdown.classList.toggle("hidden");
+            });
+            window.addEventListener("click", (e) => {
+                if (!userMenuButton.contains(e.target) && !userDropdown.contains(e.target)) {
+                    userDropdown.classList.add("hidden");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
